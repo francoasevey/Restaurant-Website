@@ -218,3 +218,38 @@ header section .cards .card{
     background: #282828;
     border-radius: 50px 10px 10px 10px;
 }
+header section .cards .card:nth-last-child(1){
+    margin-right: 0px;
+}
+header section .cards .card .dis{
+    width: 70px;
+    position: relative;
+    top: -5px;
+    left: -5px;
+}
+header section .cards .card .steam{
+    height: 60px;
+    width: 80px;
+    position: absolute;
+    top: -35px;
+    left: -5px;
+}
+header section .cards .card h4{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+}
+header section .cards .card h5{
+    color: #fff;
+    font-size: 12px;
+    font-family: 500;
+    padding: 0px 10px;
+    margin-top: -8px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
