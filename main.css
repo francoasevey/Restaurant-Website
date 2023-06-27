@@ -98,6 +98,27 @@ header nav .right_menu .user_cart{
     display: flex;
     align-items: center;
 }
+header nav .right_menu .user_cart .user{
+    position: relative;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+header nav .right_menu .user_cart .user img{
+    width: 100%;
+}
+header nav .right_menu .user_cart .user::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #dc1313;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+}
 header nav .right_menu ul li a:hover::before{
     opacity: 1;
 }
@@ -105,6 +126,25 @@ header .left_menu{
     width: 20px;
     height: 90%;
     /*border: 1px solid red;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header .left_menu a{
+    margin: 30px 0px;
+    padding: 0px 5px;
+    text-decoration: none;
+    font-size: 10px;
+    color: #000;
+    font-weight: 600;
+    transition: .3s linear;
+    transform: rotate(-90deg);
+}
+header .left_menu{
+    width: 20px;
+    height: 90%;
+    border: 1px solid red;
 }
 header section{
     width: 97%;
