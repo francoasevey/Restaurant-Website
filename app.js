@@ -12,10 +12,12 @@ right.addEventListener('click', () => {
 
 let poster = document.getElementById('poster');
 let title = document.getElementById('title');
-let price_cont = document.getElementById('price');
+let price_cont = document.getElementById('price_cont');
 
 Array.from(document.getElementsByClassName('card')).forEach((ele, i) => {
     ele.addEventListener('click', ()=> {
         poster.src = ele.getElementsByTagName('img')[0].src;
+        title.innerText = ele.getElementsByTagName('h5')[0].innerText;
+        price_cont.innerText = ele.getElementsByTagName('h4')[0].innerText;
     })
 })
