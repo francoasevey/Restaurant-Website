@@ -1,0 +1,21 @@
+@media screen and (max-width : 1260px) {
+    header{
+        width: 83%;
+    }
+}
+@media screen and (max-width : 885px) {
+    header{
+        width: 95%;
+    }
+}
+@media screen and (max-width : 775px) {
+    header .logo{
+        left: 13%;
+    }
+    header section .content{
+        left: 340px;
+    }
+    header section{
+        width: 92%;
+    }
+}

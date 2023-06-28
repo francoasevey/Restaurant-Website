@@ -25,6 +25,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
+    transition: 1s linear;
 }
 header .logo{
     position: absolute;
