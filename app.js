@@ -10,4 +10,12 @@ right.addEventListener('click', () => {
     cards.scrollLeft += 140;
 })
 
-let poster = document.getElementById('')
+let poster = document.getElementById('poster');
+let title = document.getElementById('title');
+let price_cont = document.getElementById('price');
+
+Array.from(document.getElementsByClassName('card')).forEach((ele, i) => {
+    ele.addEventListener('click', ()=> {
+        poster.src = ele.getElementsByTagName('img')[0].src;
+    })
+})
